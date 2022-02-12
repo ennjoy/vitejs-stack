@@ -1,19 +1,8 @@
 import { createApp } from 'vue'
-import { createRouter, createWebHashHistory } from 'vue-router'
-import generatedRoutes from 'virtual:generated-pages'
-import { setupLayouts } from 'virtual:generated-layouts'
+import router from '~/router'
 import App from '~/App.vue'
 
-import '~/assets/scss/main.scss'
-
-const routes = setupLayouts(generatedRoutes)
-
-console.log(routes)
-
-const router = createRouter({
-    history: createWebHashHistory(),
-    routes
-})
+import '~/assets/css/style.css'
 
 const app = createApp(App)
 

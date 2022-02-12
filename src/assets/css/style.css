@@ -1,0 +1,13 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  code {
+    @apply bg-[#eee] py-[2px] px-[4px] rounded-[4px] text-[#304455]
+  }
+  
+  a {
+    @apply text-[#42b983]
+  }
+}
