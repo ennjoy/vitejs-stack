@@ -11,6 +11,5 @@ import logo from '~/assets/images/logo.png'
 </template>
 
 <route lang="yaml">
-meta:
-  layout: Default
+name: Index
 </route>

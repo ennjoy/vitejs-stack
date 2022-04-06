@@ -1,4 +1,4 @@
-import path from 'path'
+import { resolve } from 'path'
 import { defineConfig } from 'vite'
 import Vue from '@vitejs/plugin-vue'
 import Layouts from 'vite-plugin-vue-layouts'
@@ -13,7 +13,7 @@ import Inspect from 'vite-plugin-inspect'
 export default defineConfig({
   resolve: {
     alias: {
-      '~/': `${path.resolve(__dirname, 'src')}/`,
+      '~/': `${ resolve(__dirname, 'src') }/`,
     },
   },
   plugins: [
@@ -97,7 +97,7 @@ export default defineConfig({
     Inspect({
       // change this to enable inspect for debugging
       enabled: false,
-    }),
+    })
   ],
 
   server: {
